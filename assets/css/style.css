@@ -12,7 +12,7 @@ body {
     justify-content: center;
 }
 
-header {
+h1 {
     color: white;
     font-family: 'Annie Use Your Telescope', cursive;
 	font-size: 4em; 	
@@ -32,12 +32,16 @@ input#add-emotion {
 	margin-left: 148px; 
 }
 
+#add-emotion {
+	border-radius:25px; 
+}
+
   
 /*Sweet ass animation*/
-  .typewriter header {
+  .typewriter header h1 {
     font-size: 4em;
     color: #fff;
-    padding-left:65px;
+    padding-left:20px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 50 auto; /* Gives that scrolling effect as the typing happens */
