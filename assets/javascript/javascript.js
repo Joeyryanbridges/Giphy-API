@@ -7,25 +7,25 @@ var feels = ["Awkward", "Drunk", "Hungry", "Mind Blown", "Bored", "Excited", "Co
         var feels = $(this).attr("data-name");
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + feels + "&limit=15&api_key=nJEWn8ZepjJ0pKZntjqbzMEhs2HZ5uy5";
 
-        $.ajax({
-          url: queryURL,
-          method: "GET"
-        }).then(function(response) {
-			for (var i = 0; i < response.data.length; i++){
-				console.log(response)
-			}
-			
-		  var feelsDiv = $("<div class='feels'>");
-          var rating = response.data[i].Rated;
-          var pOne = $("<p>").text(rating[i]);
-          feelsDiv.append(pOne);
-          var giphyURL = response.data[i].images.fixed_height.url;
-	      var giphy = $("<img>").attr("src", giphyURL);
-          feelsDiv.append(giphy);
-			
-		  $("feels-view").html(feelsDiv);	
-        });
-      }
+    $.ajax({
+         url: queryURL,
+         method: "GET"
+       }).then(function(response) {
+         var feelsDiv = $("<div class='feels'>");
+            for (var i = 0; i < response.data.length; i++){
+                console.log(response.data[i].rating)
+
+         var rating = response.data[i].rating;
+         var pOne = $("<p>").text(rating[i]);
+         feelsDiv.append(pOne);
+         var giphyURL = response.data[i].images.fixed_height.url;
+          var giphy = $("<img>").attr("src", giphyURL);
+         feelsDiv.append(giphy);
+            
+          $("#feels-view").html(feelsDiv);
+         }
+       });
+     }
       // Function for displaying movie data
       function renderButtons() {
         // Deleting the movies prior to adding new movies

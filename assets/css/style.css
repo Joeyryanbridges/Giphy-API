@@ -12,6 +12,13 @@ body {
     justify-content: center;
 }
 
+.feels-style{
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 h1 {
     color: white;
     font-family: 'Annie Use Your Telescope', cursive;
