@@ -2,6 +2,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+container-fluid {
+	width: auto;
+}
+
 body {
     background-image: url(../images/stars.gif);
     background-repeat: no-repeat;
@@ -12,17 +16,39 @@ body {
     justify-content: center;
 }
 
-.feels-style{
-	position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+#feels-view{
+    width: 100%;
+    top: 40%;
+    position: absolute;
+	
+	
+}
+
+div.feels {
+	position: absolute;
+	width: 100%;
+    top: 50px;
 }
 
 h1 {
     color: white;
     font-family: 'Annie Use Your Telescope', cursive;
-	font-size: 4em; 	
+	font-size: 6em;
+	text-align: center;
+}
+
+h3{
+	color: white;
+    font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 2em;
+	text-align: center;
+	padding-left: 0px; 
+}
+
+input#feels-input.inputlength{
+	padding-left: 140px;
+	border-radius: 5px;
+	
 }
 
 label {
@@ -30,17 +56,28 @@ label {
 }
 
 input.inputLength {
-    width: 30em;
-    border-radius: 10px;
-    background-color: ghostwhite;
+   width: 30em;
+   border-radius: 10px;
+   background-color: ghostwhite;
+   padding-left: 125px;
+   margin-left: 165px; 	
 }
 
-input#add-emotion {
+input#add-feels {
 	margin-left: 148px; 
 }
 
-#add-emotion {
-	border-radius:25px; 
+button.feels-btn {
+	font-family: 'Poiret One', cursive;
+	background-color: floralwhite; 
+	font-size: 1em;
+	border-radius: 5px; 
+}
+
+#add-feels {
+	border-radius:5px;
+	font-family: 'Poiret One', cursive;
+	margin-right: 400px;
 }
 
   
@@ -48,7 +85,7 @@ input#add-emotion {
   .typewriter header h1 {
     font-size: 4em;
     color: #fff;
-    padding-left:20px;
+    padding-left:18px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 50 auto; /* Gives that scrolling effect as the typing happens */

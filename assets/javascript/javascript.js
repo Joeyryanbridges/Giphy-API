@@ -1,4 +1,4 @@
-var feels = ["Awkward", "Drunk", "Hungry", "Mind Blown", "Bored", "Excited", "Confused", "Frustrated", "Tired", "Embarrased", "Suspicious"];
+var feels = ["Awkward", "Drunk", "Hungry", "Mind Blown", "Bored", "Excited", "Confused", "Frustrated", "Tired", "Embarrased", "Suspicious", "Emo"];
 				  
 
       // displayFeels function re-renders the HTML to display the appropriate content
