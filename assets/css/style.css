@@ -1,10 +1,3 @@
-* {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-container-fluid {
-	width: auto;
-}
 
 body {
     background-image: url(../images/stars.gif);
@@ -12,22 +5,30 @@ body {
     background-size: cover;
     opacity: 0.9em; 
     padding-top: 5em;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #feels-view{
     width: 100%;
     top: 40%;
-    position: absolute;
-	
-	
+    position: absolute;	
+}
+
+#input-form {
+    margin: 15px; 
 }
 
 div.feels {
-	position: absolute;
-	width: 100%;
+    position: absolute;
+    width: 100%;
     top: 50px;
+    padding-left: 35px;
+}
+
+p {
+    margin-top: 20px; 
+    color: black; 
 }
 
 h1 {
@@ -37,7 +38,7 @@ h1 {
 	text-align: center;
 }
 
-h3{
+h3 {
 	color: white;
     font-family: 'Annie Use Your Telescope', cursive;
 	font-size: 2em;
@@ -45,10 +46,16 @@ h3{
 	padding-left: 0px; 
 }
 
-input#feels-input.inputlength{
-	padding-left: 140px;
-	border-radius: 5px;
-	
+Img {
+    margin-top: 8px; 
+    margin-right: 8px;
+    margin-bottom:8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+    height: 250px;
+    width: 300px;
 }
 
 label {
@@ -56,15 +63,14 @@ label {
 }
 
 input.inputLength {
-   width: 30em;
-   border-radius: 10px;
-   background-color: ghostwhite;
-   padding-left: 125px;
-   margin-left: 165px; 	
+    width: 30em;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    position: relative;
 }
 
 input#add-feels {
-	margin-left: 148px; 
+	margin-left: 30%; 
 }
 
 button.feels-btn {
@@ -75,17 +81,17 @@ button.feels-btn {
 }
 
 #add-feels {
-	border-radius:5px;
+	border-radius: 5px;
 	font-family: 'Poiret One', cursive;
-	margin-right: 400px;
+    margin-right: 400px;
+    margin-bottom: 25px;
 }
 
-  
 /*Sweet ass animation*/
   .typewriter header h1 {
     font-size: 4em;
     color: #fff;
-    padding-left:18px;
+    padding-left:5px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 50 auto; /* Gives that scrolling effect as the typing happens */
